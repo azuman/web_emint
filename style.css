@@ -1,1 +1,383 @@
-/* this is test */
+/* 
+    Definitions
+    
+    -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    ### トップページのクラス
+    .pageMap_e818f920eaf442989f1e8a703785923a
+
+    ### separatedSection IDs
+    ### 先頭セクションID
+    #section-first
+
+    ### 「デジタル集合知」セクションID
+    #section-block-6b1decc678d24bdea7982362a0976b98
+
+    ### 「過去データ示唆」セクションID
+    #section-block-fe2536d5f14e4144bc4f4d4e1b8dba38
+
+    ### 「ノイズ源部品推定」セクションID
+    #section-block-def775e51f804b15b7843bbbe80cd9e4
+
+    ### 「デジタル化様々」セクションID
+    #section-block-c147b008ca0246c99a88c2a286054a50
+
+    ### 「場所を選ばす」セクションID
+    #section-block-e7c561ecd1c3403497f34ad7eb750219
+
+    ### 「データを学習」セクションID
+    #section-block-417413ecc60d42df80a4a3e2284d9895
+
+    ### 主な機能セクションID
+    #section-block-09ec70dba01648b2a67ef53dcf12ce19
+
+    ### 動作環境セクションID
+    #section-block-c10e669c1324483aaccb69c4450a347d
+
+    ### お問い合わせセクションID
+    #section-block-22d100aa7aba4c0ab588ca6b4f300773
+    -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+/*
+    ### Webサイトスコープ
+*/
+:root {
+    --contents-width: 1100px;
+    --header-height: 50px;
+}
+
+.header {
+    position: fixed;
+    height: var(--header-height);
+}
+
+.header__contentsWrapper {
+    height: var(--header-height);
+    max-width: var(--contents-width);
+}
+
+.page {
+    font-family: YakuHanJP, "Noto Sans JP", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    scroll-margin-top: var(--header-height);
+}
+
+.coverImage {
+    display: none;
+}
+
+.titleSection__contentsWrapper {
+    display: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+.container {
+    letter-spacing: 0.05em;
+    max-width: 100%;
+    padding: 0;
+}
+
+.notion-h1, .notion-h2, .notion-h3 {
+    font-weight: 700;
+}
+
+.contentsFooterSection {
+    display: none;
+}
+
+/*
+    ### トップページスコープ
+*/
+.pageMap_e818f920eaf442989f1e8a703785923a .separatedSection__contentsWrapper,
+.pageMap_e818f920eaf442989f1e8a703785923a .contentsFooterSection__contentsWrapper,
+.pageMap_e818f920eaf442989f1e8a703785923a .footer__contentsWrapper {
+  max-width: var(--contents-width);
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a div.notion-text ~ ul.notion-list:first-of-type {
+    margin-top: 0.8em;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a div.notion-text ~ ul.notion-list li {
+    font-size: 0.8em;
+    padding: 0px;
+}
+
+/* 色切り替え */
+#section-block-6b1decc678d24bdea7982362a0976b98,
+#section-block-def775e51f804b15b7843bbbe80cd9e4,
+#section-block-e7c561ecd1c3403497f34ad7eb750219,
+#section-block-09ec70dba01648b2a67ef53dcf12ce19,
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 {
+    background-color: #f5f7fe;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a .notion-h2 {
+    font-size: 2.0em;
+    margin-top: 0;
+    text-align: center;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a .notion-text {
+    color: #7e828f;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a h1.title {
+    display: none;
+}
+
+.pageMap_e818f920eaf442989f1e8a703785923a .notion-column .notion-h3 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+/*
+    ### 先頭セクションID
+    #section-first
+*/
+#section-first {
+    margin-top: 80px;
+}
+
+#section-first .notion-h3 {
+    font-size: 3em;
+}
+
+#section-first b {
+    color: var(--fg-color);
+    font-weight: 700;
+    font-size: 1.2em;
+    background: linear-gradient(transparent 60%, yellow 60%);
+}
+
+/* 
+    ### 「デジタル集合知」セクション
+    #section-block-6b1decc678d24bdea7982362a0976b98
+*/
+#section-block-6b1decc678d24bdea7982362a0976b98 .separatedSection__contentsWrapper > .notion-text {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 600;
+    color: var(--fg-color);
+}
+
+/*
+    ### 「過去データ示唆」セクションID
+    #section-block-fe2536d5f14e4144bc4f4d4e1b8dba38 
+ */
+ #section-block-fe2536d5f14e4144bc4f4d4e1b8dba38 .notion-row .notion-column:nth-child(1) {
+    width: calc((100% - 46px) * 0.6) !important;
+ }
+
+ #section-block-fe2536d5f14e4144bc4f4d4e1b8dba38 .notion-row .notion-column:nth-child(3) {
+    width: calc((100% - 46px) * 0.4) !important;
+ }
+
+ /* 
+    ### 「ノイズ源部品推定」セクションID
+    #section-block-def775e51f804b15b7843bbbe80cd9e4
+ */
+ #section-block-def775e51f804b15b7843bbbe80cd9e4 .notion-row .notion-column:nth-child(1) {
+    width: calc((100% - 46px) * 0.4) !important;
+ }
+
+ #section-block-def775e51f804b15b7843bbbe80cd9e4 .notion-row .notion-column:nth-child(3) {
+    width: calc((100% - 46px) * 0.6) !important;
+ }
+
+/* 
+    ### 「デジタル化様々」セクションID
+    #section-block-c147b008ca0246c99a88c2a286054a50
+*/
+#section-block-c147b008ca0246c99a88c2a286054a50 .notion-row .notion-h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#section-block-c147b008ca0246c99a88c2a286054a50 .notion-row .notion-text {
+    font-size: 0.87em;
+}
+
+/* 
+    ### 「場所を選ばす」セクションID
+    #section-block-e7c561ecd1c3403497f34ad7eb750219
+*/
+#section-block-e7c561ecd1c3403497f34ad7eb750219 .notion-list {
+    list-style-type: none;
+    position: relative;
+    align-self: normal;
+    display: inline-flex;
+    align-items: baseline;
+    padding-left: 0;
+}
+
+#section-block-e7c561ecd1c3403497f34ad7eb750219 .notion-list::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 6px;
+    align-items: baseline;
+    top: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb3f6808-ac9c-4be7-b61d-daf13c52e884/hand-point-right-regular.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210319%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210319T054203Z&X-Amz-Expires=86400&X-Amz-Signature=81537035d2ebb394cc8f3d8c78dcfc1ee675117db0d545367b822bd2e6ad3ab1&X-Amz-SignedHeaders=host");
+}
+
+/* 
+    ### 主な機能セクションID
+    #section-block-09ec70dba01648b2a67ef53dcf12ce19
+*/
+#section-block-09ec70dba01648b2a67ef53dcf12ce19 .notion-column {
+    width: auto !important;
+    margin: 40px 60px 0px 60px;
+}
+
+#section-block-09ec70dba01648b2a67ef53dcf12ce19 .notion-row {
+    justify-content: center;
+}
+
+/* 
+    ### 動作環境セクション
+    #section-block-c10e669c1324483aaccb69c4450a347d
+*/
+#section-block-c10e669c1324483aaccb69c4450a347d .notion-list-disc {
+    list-style-type: none;
+    border-bottom: solid 1px;
+    padding-left: 0;
+}
+
+#section-block-c10e669c1324483aaccb69c4450a347d .notion-column > .notion-h3 {
+    font-size: 1.5em;
+}
+
+#section-block-c10e669c1324483aaccb69c4450a347d .notion-row > .notion-column {
+    max-width: fit-content;
+    margin-top: 40px;
+}
+
+#section-block-c10e669c1324483aaccb69c4450a347d li {
+    margin-right: 30px;
+}
+
+#section-block-c10e669c1324483aaccb69c4450a347d .notion-row {
+    justify-content: center;
+}
+
+/* 
+    ### お問い合わせセクションID
+    #section-block-22d100aa7aba4c0ab588ca6b4f300773
+*/
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 .notion-text {
+    display: flex;
+    justify-content: center;
+}
+
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 .notion-link {
+    width: auto;
+    padding: 16px 64px;
+    max-width: fit-content;
+    background: #42c0e2;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    opacity: 1;
+    border: none;
+}
+
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 .notion-link:hover {
+    opacity: 0.7;
+}
+
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 .notion-text:nth-of-type(2) {
+    font-size: 0.8em;
+}
+
+#section-block-22d100aa7aba4c0ab588ca6b4f300773 .notion-blank {
+    display: none;
+}
+
+/* 色を使った制御 */
+.notion-gray {
+    display: none;
+}
+
+/*
+    ### Footer（Webサイトスコープ）
+*/
+.footer {
+    background-color: var(--fg-color);
+    padding: 30px 20px 20px 20px;
+    margin-top: 0;
+}
+
+.footer .notion-blank {
+    display: none;
+}
+
+.footer .notion-link {
+    opacity: 1;
+    border-bottom: none;
+}
+
+.footer .notion-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer img {
+    max-width: 50% !important;
+}
+
+.footer .notion-column .notion-h3 {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.footer .notion-text {
+    font-size: 0.9em;
+    color: lightgray;
+    margin: 0 0 0 0;
+}
+
+.footer__contentsWrapper {
+    padding: 16px 16px 0px 16px;
+}
+
+.footer figure ~ .notion-text {
+    font-weight: 700;
+    font-size: 0.7em;
+    color: white;
+} /* footerのロゴ下の文字 */
+
+.footer .notion-row .notion-column:nth-child(1) {
+    width: auto;
+    flex: 2;
+} /* footerのセクション幅調整 */
+
+.footer .notion-row .notion-column:nth-child(3),
+.footer .notion-row .notion-column:nth-child(5) {
+    width: auto;
+    flex: 1;
+} /* footerのセクション幅調整 */
+
+.footer figure > div {
+    align-self: start !important;
+}
+
+.footer .notion-row {
+    margin-bottom: 5em;
+}
+
+.footer__contentsWrapper > .notion-text {
+    text-align: right;
+    font-size: 0.75em;
+}
